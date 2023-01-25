@@ -19,7 +19,7 @@ module.exports = {
   },
   plugins: [new HtmlWebpackPlugin({})],
   output: {
-    filename: 'main.js',
+    filename: './main.js',
     path: path.resolve(__dirname, 'dist'),
   },
 };
