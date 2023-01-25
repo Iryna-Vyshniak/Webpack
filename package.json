@@ -7,7 +7,8 @@
     "dev": "webpack-dev-server --open --config webpack.dev.js",
     "build": "npx webpack --config webpack.prod.js",
     "start": "npx webpack --mode development",
-    "deploy": "gh-pages -d dist"
+     "gh-deploy": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages",
+     "gh-deploy-init": "git push origin && git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
     "type": "git",
