@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.dev.js",
     "build": "npx webpack --config webpack.prod.js",
-    "start": "npx webpack --mode development"
+    "start": "npx webpack --mode development",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
