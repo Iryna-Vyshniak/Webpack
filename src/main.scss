@@ -1,0 +1,10 @@
+$body-color: rgb(212, 250, 192);
+
+body {
+    display: grid;
+    height: 100vh;
+    transition: all .5s;
+    user-select: none;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(234, 196, 251));
+    font-size: responsive;
+}
