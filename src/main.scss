@@ -1,10 +1,48 @@
-$body-color: rgb(212, 250, 192);
+$color: #c3deffd0;
+
+html {
+    min-height: 100vh;
+    background: url(../src/assets/images/cream-paper.png), linear-gradient(to top, rgb(255, 255, 255), rgb(3, 193, 251));
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
 
 body {
     display: grid;
     height: 100vh;
     transition: all .5s;
     user-select: none;
-    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(234, 196, 251));
     font-size: responsive;
+}
+
+.section {
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+[class*="__container"] {
+    margin: 0 auto;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+    max-width: 83.125rem;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: $color;
+    filter: drop-shadow(1px 1px 0.5px #004aba) drop-shadow(-1px -1px 1px #ffffff);
+    text-align: center;
+    color: $color;
+}
+
+.section__logo {
+    margin: 0 auto;
+    height: 22.5rem;
+    width: 22.5rem;
+    background-image: url('./assets/images/webpack-logo.png');
+    background-size: contain;
+    filter: drop-shadow(5px 5px 12px #4b93fe) drop-shadow(-5px -5px 12px #ffffff);
 }

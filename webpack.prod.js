@@ -16,6 +16,11 @@ module.exports = merge(common, {
           'sass-loader',
         ],
       },
+      { test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource' },
+      { test: /\.html$/i, loader: 'html-loader' },
+      { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline' },
+      { test: /\.xml$/i, type: 'asset/resource' },
+      { test: /\.csv$/i, type: 'asset/resource' },
     ],
   },
   plugins: [].concat(
